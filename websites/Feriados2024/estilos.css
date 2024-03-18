@@ -1,0 +1,40 @@
+.estilo-tabla table{
+    width: 20em;
+    border-collapse: collapse;
+}
+
+.estilo-tabla td{
+    width: 2.857em; /* Ancho de cada celda */
+    padding: 0.3em;
+    height: 1.2em; /* Altura automática */
+    text-align: center; /* Centra el texto horizontalmente */
+    vertical-align: middle;
+}
+
+.estilo-tabla tr:nth-child(odd) {
+    background-color: gainsboro; /* Color de fondo para filas pares */
+    border: 1px  solid black;
+    border-left: none; /* Elimina el borde izquierdo */
+    border-right: none; /* Elimina el borde derecho */ 
+}
+
+.estilo-tabla tr:nth-child(even) {
+    background-color: white; /* Color de fondo para filas impares*/
+    border: 1px white;  
+}
+
+.contenedor-tablas {
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola línea */
+    gap: 3.5rem;
+    justify-content: center;
+}
+
+.estilo-listas {
+    max-width: 17rem;
+}
+
+.estilo-listas li {
+    word-wrap: break-word;
+    margin-bottom: 0.5em;
+}
